@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+#projects {
+  background: #f8f9fa;
+  padding: 2rem 0;
+
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+
+    img {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+  }
+}

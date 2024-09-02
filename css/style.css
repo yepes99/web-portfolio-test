@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#header-home {
+  background: #333;
+  color: #fff;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+#header-home .container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#header-home h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+#header-home h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 300;
+}
+#header-home p {
+  font-weight: 300;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+#header-home ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+#header-home ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+#header-home ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+#header-home ul li a:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card .card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.card .card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.card .card-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.card .card-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+.card:hover .card-info {
+  opacity: 1;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #header-home {
+    height: 80vh;
+  }
+  #header-home h1 {
+    font-size: 2.5rem;
+  }
+  #header-home ul li a {
+    font-size: 1.5rem;
+  }
+  .card-info {
+    font-size: 0.9rem;
+  }
+}
+.text-main-color {
+  color: #007bff;
+}
+
+.bg-main-color {
+  background: #007bff;
+}
+
+#contact button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#contact button:hover {
+  background: #0062cc;
+}
+
+#footer {
+  background: #6c757d;
+  color: #fff;
+  padding: 20px 0;
+}
+#footer a {
+  color: #fff;
+}
+#footer a:hover {
+  color: #868e96;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,152 @@
+$contact-bg-color: #f8f9fa;
+$contact-card-bg: #ffffff;
+$contact-text-color: #343a40;
+
+// Variables de color específicas para la página de contacto
+$contact-bg-color: #f8f9fa;
+$contact-card-bg: #ffffff;
+$contact-text-color: #343a40;
+
+// Estilos globales de contacto
+#contact {
+  background-color: $contact-bg-color;
+  padding: 60px 0;
+  
+  .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: $contact-text-color;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    color: $contact-text-color;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-card {
+    background-color: $contact-card-bg;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    
+    i {
+      color: $main-color;
+      margin-bottom: 15px;
+    }
+
+    h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $contact-text-color;
+      font-size: 0.9rem;
+    }
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-group {
+      margin-bottom: 15px;
+
+      label {
+        font-weight: 500;
+      }
+
+      input, textarea {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding: 10px;
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    button {
+      background: $main-color;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: darken($main-color, 10%);
+      }
+    }
+  }
+}
+
+// Footer Styles
+#footer {
+  background: $secondary-color;
+  color: #fff;
+  padding: 20px 0;
+  
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .footer-nav {
+    text-align: center;
+    margin-top: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+        margin: 0 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: lighten($secondary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-card {
+    margin: 10px;
+  }
+}

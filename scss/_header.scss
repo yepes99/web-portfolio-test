@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilos para el header
+#header-home {
+    background-color: $bg-dark;
+    color: $text-light;
+  
+    .navbar {
+      background-color: transparent;
+    }
+  
+    .navbar-brand {
+      color: $text-light;
+    }
+  
+    .nav-link {
+      color: $text-light;
+    }
+  
+    #showcase {
+      background: $bg-dark;
+      color: $text-light;
+      padding: 60px 0;
+  
+      .social {
+        margin-top: 20px;
+  
+        .nav {
+          li {
+            a {
+              color: $text-light;
+            }
+          }
+        }
+      }
+    }
+  }

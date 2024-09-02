@@ -1,0 +1,5 @@
+// Mixin para borde redondeado
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
